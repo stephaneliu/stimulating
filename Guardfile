@@ -4,7 +4,6 @@ guard 'process', name: 'Webpacker', command: 'bin/webpack' do
   watch(%r{^app/javascript/w+/*})
 end
 
-
 brakeman_options = {
   run_on_start: true,
   quiet: true
@@ -82,7 +81,7 @@ group :red_green_refactor, halt_on_fail: true do
 
   rubocop_options = {
     all_on_start: false,
-    cli: '--rails --parallel',
+    cli: '--rails --parallel'
     # keep_failed: true,
   }
 
