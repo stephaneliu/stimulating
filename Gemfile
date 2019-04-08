@@ -62,3 +62,55 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'awesome_print'
+gem 'bootstrap', '~>4.1.0'
+gem 'devise'
+gem 'font-awesome-rails'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'rack-timeout'
+group :development do
+  gem 'better_errors'
+  gem 'foreman'
+  gem 'guard'
+  gem 'guard-brakeman', require: false
+  gem 'guard-ctags-bundler'
+  gem 'guard-haml_lint'
+  gem 'guard-reek'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
+  gem 'guard-process'
+  gem 'html2haml'
+  gem 'hub'
+  gem 'meta_request'
+  gem 'pronto'
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-haml', require: false
+  gem 'pronto-reek', require: false
+  gem 'pronto-rubocop', require: false
+  gem 'pronto-simplecov', require: false
+  gem 'rails_layout'
+  gem 'rubocop'
+  gem 'spring-commands-rspec'
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard'
+end
+
+group :test do
+  gem 'annotate'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec_junit_formatter'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  gem 'rails-controller-testing'
+  gem 'simplecov'
+  gem 'test-prof'
+end
+
+group :development, :test do
+  gem 'rubocop-rspec'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+end
