@@ -6,3 +6,17 @@
     = Time.now
   %hr.my-4
   %p Strike while the iron is hot!
+
+%h2 Example of a title filled by StimulusJS
+%div{ data: { controller: "hello" } }
+  %div{ data: { target: "hello.output" } }
+
+%hr
+
+%h2 Copy to Clipboard
+.hint This feature is progressive. Try turning off JS.
+%div{ data: { controller: "clipboard" } }
+  PIN:
+  %input{ type: "text", value: "1234ABCDRandom", readonly: true, data: { target: "clipboard.source" } }
+  %button.clipboard-button{ data: { action: "clipboard#copy"} }
+    Copy
